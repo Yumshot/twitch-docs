@@ -126,7 +126,7 @@ export default defineComponent({
     setup() {
         const commands = ref(null);
         const fetchCommands = async () => {
-            const response = await fetch('http://localhost:3000/request-commands');
+            const response = await fetch('http://192.168.56.1:3000/request-commands');
             const data = await response.json();
             commands.value = data;
 
