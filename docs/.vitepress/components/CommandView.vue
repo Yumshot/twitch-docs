@@ -4,7 +4,7 @@
             <thead>
                 <tr>
                     <th>
-                        <h1>Command Name</h1>
+                        <h1>Name</h1>
                     </th>
                     <th>
                         <h1>Description</h1>
@@ -18,7 +18,7 @@
             <tbody>
                 <tr v-for="command in commands" :key="command.command">
                     <td>{{ command.command }}</td>
-                    <td>{{ command.description }}</td>
+                    <td style="font-size: 12px;">{{ command.description }}</td>
                     <td>{{ command.usage }}</td>
                 </tr>
 
@@ -38,18 +38,18 @@
 <style scoped>
 .container th h1 {
     font-weight: bold;
-    font-size: 0.85em;
+    font-size: 12px;
     text-align: center;
-    color: #185875;
+    color: #eaeff1;
 }
 
-.container td {
+/* .container td {
     font-weight: normal;
-    font-size: 1em;
+    font-size: 0.8em;
     -webkit-box-shadow: 0 2px 2px -2px #0E1119;
     -moz-box-shadow: 0 2px 2px -2px #0E1119;
     box-shadow: 0 2px 2px -2px #0E1119;
-}
+} */
 
 .container {
     text-align: center;
@@ -69,20 +69,20 @@
 
 /* Background-color of the odd rows */
 .container tr:nth-child(odd) {
-    background-color: #323C50;
+    background-color: #252529;
 }
 
 /* Background-color of the even rows */
 .container tr:nth-child(even) {
-    background-color: #2C3446;
+    background-color: #313136;
 }
 
 .container th {
-    background-color: #1F2739;
+    background-color: #1e1e20;
 }
 
 .container td:first-child {
-    color: #FB667A;
+    color: #7cb5d8;
 }
 
 .container tr:hover {
@@ -93,11 +93,13 @@
 }
 
 .container td:hover {
-    background-color: #FFF842;
-    color: #403E10;
+    background-color: #2d414e;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: whitesmoke;
     font-weight: bold;
 
-    box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
+    box-shadow: #7cb5d8 -1px 1px, #7cb5d8 -2px 2px, #7cb5d8 -3px 3px, #7cb5d8 -4px 4px, #7cb5d8 -5px 5px, #7cb5d8 -6px 6px;
     transform: translate3d(6px, -6px, 0);
 
     transition-delay: 0s;
