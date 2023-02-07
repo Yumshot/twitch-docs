@@ -1,5 +1,5 @@
 <script setup>
-// import CommandView from '.vitepress/components/CommandView.vue'
+import CommandView from '.vitepress/components/CommandView.vue'
 </script>
 # Command List
 
@@ -20,5 +20,5 @@ If the command needs more information than just the command name.)
 ```
 ---
 
-<!-- <CommandView /> -->
+<CommandView />
 

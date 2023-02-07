@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress";
+
 export default defineConfig({
   title: "Yumbot",
   description: "Docs for the Best Bot on Twitch!!",
@@ -21,14 +22,17 @@ export default defineConfig({
         text: "Options",
         items: [
           { text: "Commands", link: "/commands" },
-          { text: "Tools", link: "/tools/" },
+          { text: "Tools", link: "/tools" },
         ],
       },
     ],
     socialLinks: [
       { icon: "github", link: "https://github.com/vuejs/vitepress" },
-      { icon: "twitter", link: "..." },
-      { icon: "discord", link: "..." },
+      { icon: "twitter", link: "https://twitter.com/NotShinigamii" },
+      {
+        icon: "discord",
+        link: "https://discord.com/invite/nUgkeADZUX",
+      },
     ],
     footer: {
       message: "Made by Yumshot  with 🖤",
